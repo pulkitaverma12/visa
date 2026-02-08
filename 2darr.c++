@@ -4,7 +4,9 @@
 #include<iostream>
 using namespace std;
 int main(){
+    // 2 2d array of 3x3 each
     int arr[2][3][3];
+    // 3rd array to store the sum
     int sum[3];
     cout<<"enter the element of the array: "<<endl;
     for(int i=0;i<2;i++){
@@ -15,9 +17,12 @@ int main(){
         }
     }
     for(int i=0;i<3;i++){
-        sum[i] = arr[0][0][i] + arr [1][0][i];
+        // sum of 1st array of 1st element with 2nd array of 1st element
+        sum[i] = arr[0][0][i] + arr [1][0][i]; 
     }
+    // output the sum
     cout<<"sum: "<<endl;
+    // print the sum
     for(int i =0;i<3;i++){
         cout<<sum[i]<<" ";
     }

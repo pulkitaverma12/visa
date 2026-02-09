@@ -10,7 +10,7 @@ void sorttwocolor(int arr[],int n){
         else{
             swap(arr[i],arr[j]);
             j--;
-        }
+        
     }
 };
 int main(){

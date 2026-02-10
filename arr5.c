@@ -5,10 +5,13 @@ int main(){
     int arr[7]={3,0,1,0,4,0,2};
     int left[7];
     int right[7];
+    // fill the left and right array
     left[0]=arr[0];
+    // left array will store the maximum height of the bar from the left side
     for(int i=1;i<7;i++){
         left[i] = (arr[i]>left[i-1])?arr[i]:left[i-1];
     }
+    // right array will store the maximum height of the bar from the right side
     right[6]=arr[6];
     for(int i=5;i>=0;i--){
         right[i] = (arr[i]>right[i+1])?arr[i]:right[i+1];

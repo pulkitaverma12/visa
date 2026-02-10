@@ -2,7 +2,9 @@
 int main(){
     int a[]={2,5,4,7,8,1};
     int diff[5],sub;
+    // find the difference between the adjacent elements and store it in diff array
     for(int i=0;i<5;i++){
+        // find the difference between the adjacent elements and store it in diff array
         sub = a[i+1] - a[i];
         diff[i] = sub;
     }

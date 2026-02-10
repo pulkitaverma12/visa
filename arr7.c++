@@ -13,6 +13,7 @@ int main() {
     int m = 3; 
     sort(arr, arr + n);
     int minDiff = INT_MAX;
+    // find the minimum difference between the maximum and minimum of m consecutive elements  
     for(int i = 0; i <= n - m; i++) {
         int diff = arr[i + m - 1] - arr[i];
         minDiff = min(minDiff, diff);

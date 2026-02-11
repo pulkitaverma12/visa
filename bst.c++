@@ -1,4 +1,4 @@
-// lowest common ancestor of a binary tree
+// lowest common ancestor of a binary tree o(n),o(n)
 #include<iostream>
 // #include "tree.h"
 #include <unordered_set>

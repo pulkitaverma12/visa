@@ -14,7 +14,6 @@ int main() {
     cout << "Enter number of nodes: ";
     cin >> n;
     for(int i = 1; i <= n; i++) {
-
         cout << "Enter value " << i << ": ";
         cin >> value;
         newNode = new Node;

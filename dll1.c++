@@ -56,8 +56,6 @@ int main() {
         fast = fast->next;
         slow = slow->next;
     }
-
-    cout << "Nth person from end is: " << slow->data;
-
+    cout << "Nth person from end is: "<<slow->data;
     return 0;
 }

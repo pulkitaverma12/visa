@@ -1,5 +1,7 @@
 // #insertion at head
 #include <iostream>
+#include <vector>
+#include<algorithm>
 using namespace std;
 class node
 {
@@ -58,6 +60,14 @@ int main()
     back(head2,4);
     back(head2,5);
     print(head2);
-    return 0;
 
+    vector<int> arr = {1,2,3,4,5};
+    node* head = NULL;
+    // int n = arr.size()/arr.size(arr[0]);
+    for(int i =0;i<arr.size();i++){
+        back(head , arr[i]);
+    }
+    cout<<endl;
+    print(head);
+    return 0;
 }

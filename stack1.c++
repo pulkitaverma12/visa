@@ -7,20 +7,39 @@ class mystack{
     int top,cap;
     int *arr;
     mystack(int c){
-        cap = c;
-        top = -1;
+        cap = c;   // capacity
+        top = -1;  // top of stack
         arr = new int[cap]; // dynamic array
     }
 };
+int isfull(mystack *s){
+    return (s->top == s->cap-1);
+}
+int isempty(mystack *s){
+    return (s->top == -1);
+}
+int push(mystack *s,int x){
+    if(isfull(s)){
+        cout<<"stack overflow"<<endl;
+        return -1;
+    }
+    s->arr[++s->top] = x;
+}
+int pop(mystack *s){
+    if(isempty(s)){
+        cout<<"stack underflow"<<endl;
+        return -1;
+    }
+    return s->arr[s->top--];
+}
 int main(){
     mystack s(5);
-    s.arr[0] = 1;
-    s.arr[1] = 2;
-    s.arr[2] = 3;
-    s.arr[3] = 4;
-    s.arr[4] = 5;
-    for(int i=0;i<5;i++){
-        cout<<s.arr[i]<<" ";
+    push(&s,10);
+    push(&s,20);
+    push(&s,30);
+    cout<<"Stack elements:"<<endl;
+    while(!isempty(&s)){
+        cout<<pop(&s)<<" ";
     }
     return 0;
 }

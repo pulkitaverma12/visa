@@ -23,7 +23,7 @@ int push(mystack *s,int x){
         cout<<"stack overflow"<<endl;
         return -1;
     }
-    s->arr[++s->top] = x;
+    return s->arr[++s->top] = x;
 }
 int pop(mystack *s){
     if(isempty(s)){

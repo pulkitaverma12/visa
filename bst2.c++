@@ -20,13 +20,6 @@ int main(){
     root->right->right = new node(20);
     // check if the tree is bst or not
     bool isBST = true;
-    // check if the left subtree is less than the root and the right subtree is greater than the root
-    if(root->left != NULL && root->left->data > root->data){
-        isBST = false;
-    }
-    if(root->right != NULL && root->right->data < root->data){
-        isBST = false;
-    }
     // check if the left subtree is bst and the right subtree is bst
     if(root->left != NULL && root->left->data > root->data){
         isBST = false;

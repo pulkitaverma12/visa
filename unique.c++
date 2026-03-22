@@ -26,7 +26,7 @@ vector<vector<int>> combinationsum(int arr[], int n, int tar){
 int main(){
     int arr[] = {2,3,3,4,6,7};
     int n = 6;
-    int tar = 7;
+    int tar = 11;
     vector<vector<int>> res = combinationsum(arr, n, tar);
     cout << "Unique combinations:\n";
     for(int i = 0; i < res.size(); i++){
